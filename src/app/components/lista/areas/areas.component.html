@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-body">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" [(ngModel)]="radioButtonSeleccionado"
+               type="radio" name="area" id="todos" value="Todos" (change)="radioChange()">
+            <label class="form-check-label" for="todos">Todos({{ todos }})</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" [(ngModel)]="radioButtonSeleccionado"
+                type="radio" name="area" id="desarrollo" value="Desarrollo" (change)="radioChange()">
+            <label class="form-check-label" for="femenino">Desarrollo({{ desarrollo }})</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" [(ngModel)]="radioButtonSeleccionado"
+              type="radio" name="area" id="recursos" value="Recursos" (change)="radioChange()">
+            <label class="form-check-label" for="masculino">Recursos({{ recursos }})</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" [(ngModel)]="radioButtonSeleccionado"
+              type="radio" name="area" id="mercadeo" value="Mercadeo" (change)="radioChange()">
+            <label class="form-check-label" for="masculino">Mercadeo({{ mercadeo }})</label>
+          </div>
+    </div>
+</div>
